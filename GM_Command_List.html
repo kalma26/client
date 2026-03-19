@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GM Commands Reference</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/cyborg/bootstrap.min.css" rel="stylesheet">
+	<style>body{font-size:14px} code span { color: #fff }
+	.badge { --bs-badge-padding-x: 0.95em; --bs-badge-padding-y: 0.55em; --bs-badge-font-size: 0.75em; --bs-badge-font-weight: 700; --bs-badge-color: #fff; --bs-badge-border-radius: 0;}
+	</style>
+</head>
+<body>
+    <div class="container-fluid py-4">
+        <div class="text-center mb-5">
+            <h1 class="display-4 text-dark">GM Commands Reference</h1>
+            <p class="lead">Complete list of Game Master commands organized by category and grade/subgrade permissions</p>
+        </div>
+        
+        <div class="table-responsive">
+            <table style="vertical-align: middle;" class="table table-bordered table-hover" >
+                <thead class="table-light">
+                    <tr>
+                        <th style="text-align:center">Command</th>
+                        <th>Description</th>
+                        <th style="text-align:center">Grade/SubGrade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td align="center"><code>#</code></td>
+                        <td>GM Chatting</td>
+                        <td align="center"><span class="badge bg-secondary">-</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>Qpass</code></td>
+                        <td>Bypass/Complete Quest</td>
+                        <td align="center"><span class="badge bg-secondary">-</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>Money</code></td>
+                        <td>Get Gaunt Money</td>
+                        <td align="center"><span class="badge bg-danger">MONEY</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>Gold</code></td>
+                        <td>Get Gold Money</td>
+                        <td align="center"><span class="badge bg-danger">MONEY</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>GetMccpt</code></td>
+                        <td>Get Contribute Point</td>
+                        <td align="center"><span class="badge bg-danger">MONEY</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>GetMePvp</code></td>
+                        <td>Get Certain Point</td>
+                        <td align="center"><span class="badge bg-danger">MONEY</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>AcTpSet</code></td>
+                        <td>Action Type Set (Example: %AcTpSet TYPE_POINT NUM_POINT) 0-OrePoint, 1-HuntingPoint, 2-GoldPoint</td>
+                        <td align="center"><span class="badge bg-danger">MONEY</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>GetMeCash</code></td>
+                        <td>Get Cash Coin (Example: %GetMeCash 10000) - Can work if you right setup for the billing active.</td>
+                        <td align="center"><span class="badge bg-danger">MONEY</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>Xyz</code></td>
+                        <td>Report position</td>
+                        <td align="center"><span class="badge bg-info">FUNCTION</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>Base</code></td>
+                        <td>Jump to HQ (Example: %Base RACE_CODE) 0-Bellato, 1-Cora, 2-Accretia</td>
+                        <td align="center"><span class="badge bg-info">FUNCTION</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>Jump</code></td>
+                        <td>Jump to Map</td>
+                        <td align="center"><span class="badge bg-info">FUNCTION</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>Hide</code></td>
+                        <td>Tracing hide</td>
+                        <td align="center"><span class="badge bg-info">FUNCTION</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>No Hide</code></td>
+                        <td>Tracing Show</td>
+                        <td align="center"><span class="badge bg-info">FUNCTION</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>Kick</code></td>
+                        <td>Kick player/character</td>
+                        <td align="center"><span class="badge bg-info">FUNCTION</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>Copy</code></td>
+                        <td>Copy player/character</td>
+                        <td align="center"><span class="badge bg-info">FUNCTION</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>Kill On</code></td>
+                        <td>Set one hit</td>
+                        <td align="center"><span class="badge bg-info">FUNCTION</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>Kill Off</code></td>
+                        <td>Release one hit</td>
+                        <td align="center"><span class="badge bg-info">FUNCTION</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>Total</code></td>
+                        <td>Total user num</td>
+                        <td align="center"><span class="badge bg-info">FUNCTION</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>die</code></td>
+                        <td>Player/Character die</td>
+                        <td align="center"><span class="badge bg-info">FUNCTION</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>GodMode</code></td>
+                        <td>Neverdie mode</td>
+                        <td align="center"><span class="badge bg-info">FUNCTION</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>CrabMode</code></td>
+                        <td>No Neverdie mode</td>
+                        <td align="center"><span class="badge bg-info">FUNCTION</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>Lv</code></td>
+                        <td>Alter Lv</td>
+                        <td align="center"><span class="badge bg-info">FUNCTION</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>AllSkill</code></td>
+                        <td>All Skill GM</td>
+                        <td align="center"><span class="badge bg-info">FUNCTION</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>FullForce</code></td>
+                        <td>Full Force Skill GM</td>
+                        <td align="center"><span class="badge bg-info">FUNCTION</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>Bag</code></td>
+                        <td>Loot bag</td>
+                        <td align="center"><span class="badge bg-info">FUNCTION</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>Clear</code></td>
+                        <td>Inventory Empty</td>
+                        <td align="center"><span class="badge bg-info">FUNCTION</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>GodHand</code></td>
+                        <td>Set make succes upgrade</td>
+                        <td align="center"><span class="badge bg-info">FUNCTION</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>CrabHand</code></td>
+                        <td>Release make succes upgrade</td>
+                        <td align="center"><span class="badge bg-info">FUNCTION</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>Circle</code></td>
+                        <td>Circle user num</td>
+                        <td align="center"><span class="badge bg-info">FUNCTION</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>Res</code></td>
+                        <td>Resurrect player/character</td>
+                        <td align="center"><span class="badge bg-info">FUNCTION</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>RecallLv</code></td>
+                        <td>Animus Lv</td>
+                        <td align="center"><span class="badge bg-info">FUNCTION</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>Hms</code></td>
+                        <td>Take Holy/Mental scanner</td>
+                        <td align="center"><span class="badge bg-info">FUNCTION</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>Time</code></td>
+                        <td>-</td>
+                        <td align="center"><span class="badge bg-info">FUNCTION</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>GreenEff</code></td>
+                        <td>After Effect Nuke</td>
+                        <td align="center"><span class="badge bg-info">FUNCTION</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>F11</code></td>
+                        <td>DebDelay</td>
+                        <td align="center"><span class="badge bg-info">FUNCTION</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>Lua</code></td>
+                        <td>Running for control the luaScript in your ZoneServer folder</td>
+                        <td align="center"><span class="badge bg-info">FUNCTION</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>Autoloot</code></td>
+                        <td>automatically inserts all falling drops into inventory</td>
+                        <td align="center"><span class="badge bg-info">FUNCTION</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>*!</code></td>
+                        <td>Create Item, Example:(%*!iwknb35)</td>
+                        <td align="center"><span class="badge bg-light">CREATE_ITEM</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>SetStart</code></td>
+                        <td>Event set start</td>
+                        <td align="center"><span class="badge bg-warning">EVENT</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>SetStop</code></td>
+                        <td>Event set stop</td>
+                        <td align="center"><span class="badge bg-warning">EVENT</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>SetLv</code></td>
+                        <td>Example: %SetLv NICKNAME 65, will set this NICKNAME player level is 65</td>
+                        <td align="center"><span class="badge bg-warning">EVENT</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>SpawnStart</code></td>
+                        <td>Event Respawn Monster</td>
+                        <td align="center"><span class="badge bg-warning">EVENT</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>SpawnStop</code></td>
+                        <td>Event Respawn Monster</td>
+                        <td align="center"><span class="badge bg-warning">EVENT</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>monset on</code></td>
+                        <td>Allow monster in all map</td>
+                        <td align="center"><span class="badge bg-warning">EVENT</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>monset off</code></td>
+                        <td>Hide monster in all map</td>
+                        <td align="center"><span class="badge bg-warning">EVENT</span></td>
+                    </tr>
+                    <tr style="background-color: #ffeaa7;">
+                        <td align="center"><code>LikeBoss</code></td>
+                        <td>Set Like a Boss<br>Set Archon/Council (Example: %SetArh CANDIDATE_CLASS)</td>
+                        <td align="center"><span class="badge" style="background-color:#fdcb6e;color:#000">PATRIARCH</span></td>
+                    </tr>
+                    <tr style="background-color: #ffeaa7;">
+                        <td align="center"><code>SetArh</code></td>
+                        <td>Set Archon/Council (Example: %SetArh CANDIDATE_CLASS)<br><br>0: Archon<br>1: Sub-Archon-A<br>2: Attack-Leader-A<br>3: Defense-Leader-A<br>4: Support-Leader-A<br>5: Sub-Archon-B<br>6: Attack-Leader-B<br>7: Defense-Leader-B<br>8: Support-Leader-B</td>
+                        <td align="center"><span class="badge" style="background-color:#fdcb6e;color:#000;">PATRIARCH</span></td>
+                    </tr>
+                    <tr style="background-color: #ffeaa7;">
+                        <td align="center"><code>SetArhName</code></td>
+                        <td>Set Archon/Council like SetArh By Name (Example: %SetArhName NICKNAME CANDIDATE_CLASS)</td>
+                        <td align="center"><span class="badge" style="background-color:#fdcb6e;color:#000;">PATRIARCH</span></td>
+                    </tr>
+                    <tr style="background-color: #ffeaa7;">
+                        <td align="center"><code>EnableVote</code></td>
+                        <td>Set Player to enable vote (Example: %EnableVote Nickname) but if only %EnableVote the target is self.</td>
+                        <td align="center"><span class="badge" style="background-color:#fdcb6e;color:#000;">PATRIARCH</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>Spawn</code></td>
+                        <td>Summon monster</td>
+                        <td align="center"><span class="badge bg-success">SPAWN</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>KillMon</code></td>
+                        <td>Kill Monster in circle area</td>
+                        <td align="center"><span class="badge bg-success">SPAWN</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>Ban</code></td>
+                        <td>Banned User (Example: %Ban NICKNAME PERIODE REASON)</td>
+                        <td align="center"><span class="badge" style="background-color: #e17055;">PUNISH</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>ChatBan</code></td>
+                        <td>Ban chat player (Example: %ChatBan NICKNAME PERIODE REASON)</td>
+                        <td align="center"><span class="badge" style="background-color: #e17055;">PUNISH</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>Wipe</code></td>
+                        <td>Example: %Wipe NICKNAME, Clean all inventory this NICKNAME player</td>
+                        <td align="center"><span class="badge" style="background-color: #e17055;">PUNISH</span></td>
+                    </tr>
+                    <tr style="background-color: #a29bfe;">
+                        <td align="center"><code>Emo</code></td>
+                        <td>Force all at the same time to use the exact same Emotion. Example: %emo 70</td>
+                        <td align="center"><span class="badge" style="background-color: #6c5ce7;">EMO</span></td>
+                    </tr>
+                    <tr style="background-color: #81ecec;">
+                        <td align="center"><code>CharCall</code></td>
+                        <td>Call player/character online</td>
+                        <td align="center"><span class="badge" style="background-color: #00cec9;">CALL</span></td>
+                    </tr>
+                    <tr style="background-color: #81ecec;">
+                        <td align="center"><code>PartyCall</code></td>
+                        <td>Calling party</td>
+                        <td align="center"><span class="badge" style="background-color: #00cec9;">CALL</span></td>
+                    </tr>
+                    <tr style="background-color: #81ecec;">
+                        <td align="center"><code>GuildCall</code></td>
+                        <td>Calling guild</td>
+                        <td align="center"><span class="badge" style="background-color: #00cec9;">CALL</span></td>
+                    </tr>
+                    <tr style="background-color: #81ecec;">
+                        <td align="center"><code>Move</code></td>
+                        <td>Move to player/character</td>
+                        <td align="center"><span class="badge" style="background-color: #00cec9;">CALL</span></td>
+                    </tr>
+                    <tr style="background-color: #81ecec;">
+                        <td align="center"><code>RaceCall</code></td>
+                        <td>Call all online player in race (Example: %RaceCall RACE_CODE) 0-Bellato, 1-Cora, 2-Accretia</td>
+                        <td align="center"><span class="badge" style="background-color: #00cec9;">CALL</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>port</code></td>
+                        <td>Jump to Ether Port (Example: %port RACE_CODE) 0-Bellato, 1-Cora, 2-Accretia</td>
+                        <td align="center"><span class="badge" style="background-color: #0984e3;">TELEPORT</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>eder</code></td>
+                        <td>Jump to Ether Port (Example: %eder RACE_CODE) 0-Bellato, 1-Cora, 2-Accretia</td>
+                        <td align="center"><span class="badge" style="background-color: #0984e3;">TELEPORT</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>ship</code></td>
+                        <td>Jump to Ship (Example: %ship RACE_CODE) 0-Bellato, 1-Cora, 2-Accretia</td>
+                        <td align="center"><span class="badge" style="background-color: #0984e3;">TELEPORT</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>chip</code></td>
+                        <td>Jump to Chip War (Example: %chip RACE_CODE) 0-Bellato, 1-Cora, 2-Accretia</td>
+                        <td align="center"><span class="badge" style="background-color: #0984e3;">TELEPORT</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>mine</code></td>
+                        <td>Portal to Resource Mine</td>
+                        <td align="center"><span class="badge" style="background-color: #0984e3;">TELEPORT</span></td>
+                    </tr>
+                    <tr style="background-color: #e17055;">
+                        <td align="center"><code>war start 1</code></td>
+                        <td>Morning WAR</td>
+                        <td align="center"><span class="badge" style="background-color: #d63031;">CHIPWAR</span></td>
+                    </tr>
+                    <tr style="background-color: #e17055;">
+                        <td align="center"><code>war start 2</code></td>
+                        <td>Afternoon WAR</td>
+                        <td align="center"><span class="badge" style="background-color: #d63031;">CHIPWAR</span></td>
+                    </tr>
+                    <tr style="background-color: #e17055;">
+                        <td align="center"><code>war start 3</code></td>
+                        <td>Night WAR</td>
+                        <td align="center"><span class="badge" style="background-color: #d63031;">CHIPWAR</span></td>
+                    </tr>
+                    <tr style="background-color: #e17055;">
+                        <td align="center"><code>war end</code></td>
+                        <td>End WAR</td>
+                        <td align="center"><span class="badge" style="background-color: #d63031;">CHIPWAR</span></td>
+                    </tr>
+                    <tr style="background-color: #55a3ff;">
+                        <td align="center"><code>GSetGrade</code></td>
+                        <td>Set Guild grade by name (Example: %GSetGrade GUILDNAME GRADE)</td>
+                        <td align="center"><span class="badge" style="background-color: #2d3436;">GUILD</span></td>
+                    </tr>
+                    <tr style="background-color: #55a3ff;">
+                        <td align="center"><code>GAddSchedule</code></td>
+                        <td>Get Guild schedule (Example: %GAddSchedule GUILD1 GUILD2 TIME NUMBER MAP)</td>
+                        <td align="center"><span class="badge" style="background-color: #2d3436;">GUILD</span></td>
+                    </tr>
+                    <tr style="background-color: #55a3ff;">
+                        <td align="center"><code>GAddOneDaySchedule</code></td>
+                        <td>Set Guild in this day (Example: %GAddOneDaySchedule GUILD1 GUILD2 TIME MAP)</td>
+                        <td align="center"><span class="badge" style="background-color: #2d3436;">GUILD</span></td>
+                    </tr>
+                    <tr style="background-color: #55a3ff;">
+                        <td align="center"><code>GCreatedField</code></td>
+                        <td>Create field object guild vs guild</td>
+                        <td align="center"><span class="badge" style="background-color: #2d3436;">GUILD</span></td>
+                    </tr>
+                    <tr style="background-color: #55a3ff;">
+                        <td align="center"><code>GDestroyField</code></td>
+                        <td>Destroy field object guild vs guild</td>
+                        <td align="center"><span class="badge" style="background-color: #2d3436;">GUILD</span></td>
+                    </tr>
+                    <tr style="background-color: #636e72;">
+                        <td align="center"><code>Dpass</code></td>
+                        <td>Bypass Dungeon</td>
+                        <td align="center"><span class="badge" style="background-color: #2d3436;">DUNGEON</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>SaveRestart</code></td>
+                        <td>Kick all players from the game to be safe before restarting (must restart zone after use this command)</td>
+                        <td align="center"><span class="badge" style="background-color: #d63031;">SYSTEM</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>Reload Loot</code></td>
+                        <td>Reload the ItemLootType.dat scripts without restart the zoneserver</td>
+                        <td align="center"><span class="badge" style="background-color: #d63031;">SYSTEM</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>SendItem</code></td>
+                        <td>Give Item to Player Online by Nick.<br>Example: %SendItem Nickname irtal01<br><br>Give Nickname KeenTalc 1 Pcs<br>Example: %SendItem Nickname iwknb55 1 0x7FFF0000<br><br>Give Nickname Intense Dark Beam Saber +3 Keen Talc with 7 Slot</td>
+                        <td align="center"><span class="badge bg-success">GIFT</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>KillAll</code></td>
+                        <td>Kill all online player in all map</td>
+                        <td align="center"><span class="badge bg-danger">COMMAND_ALL</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>RecAll</code></td>
+                        <td>Revive all online player in all map</td>
+                        <td align="center"><span class="badge bg-danger">COMMAND_ALL</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>RecallAll</code></td>
+                        <td>Call all online player in all map</td>
+                        <td align="center"><span class="badge bg-danger">COMMAND_ALL</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>GiveLvAll</code></td>
+                        <td>Example: %GiveLvAll 2, will give 2 level to all online player</td>
+                        <td align="center"><span class="badge bg-danger">COMMAND_ALL</span></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><code>SendItemAll</code></td>
+                        <td>Give Item to ALL Player onlines.<br>Example: %SendItemAll irtal01<br><br>Give all player online KeenTalc 1 Pcs<br>Example: %SendItemAll iwknb55 1 0x7FFF0000<br><br>Give all player online Intense Dark Beam Saber +3 Keen Talc with 7 Slot</td>
+                        <td align="center"><span class="badge bg-danger">COMMAND_ALL</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
